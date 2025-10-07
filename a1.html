@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert java script object into JSON</h1>
+    <p id="r1"></p>
+    <p id="r2"></p>
+    <script>
+        var myobj={name:"Jhon",age:30,city:"New York"}
+        var myjson=JSON.stringify(myobj)
+        document.getElementById("r1").innerHTML=myjson
+        var myobj2=JSON.parse(myjson)
+        document.getElementById("r2").innerHTML=myobj.name + "" + myobj.age +"" + myobj.city
+    </script>
+</body>
+</html>
